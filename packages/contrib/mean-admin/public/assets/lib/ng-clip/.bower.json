@@ -1,0 +1,20 @@
+{
+  "name": "ng-clip",
+  "version": "0.2.5",
+  "main": "dest/ng-clip.min.js",
+  "dependencies": {
+    "angular": ">=1.0.4",
+    "zeroclipboard": "~2.1.0"
+  },
+  "devDependencies": {},
+  "homepage": "https://github.com/asafdav/ng-clip",
+  "_release": "0.2.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.2.5",
+    "commit": "9ed4e61538a81f96329a1ab325e6c1fc01f10984"
+  },
+  "_source": "git://github.com/asafdav/ng-clip.git",
+  "_target": "*",
+  "_originalSource": "ng-clip"
+}

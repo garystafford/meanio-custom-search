@@ -7,7 +7,7 @@ var cluster = require('cluster');
 
 // Code to run if we're in the master process or if we are not in debug mode/ running tests
 
-if ((cluster.isMaster) && (process.execArgv.indexOf('--debug') < 0) && (process.env.NODE_ENV!=='test') && (process.execArgv.indexOf('--singleProcess')<0)) {
+if ((cluster.isMaster) && (process.execArgv.indexOf('--debug') < 0) && (process.env.NODE_ENV !== 'test') && (process.execArgv.indexOf('--singleProcess') < 0)) {
 //if (cluster.isMaster) {
 
     // Count the machine's CPUs
@@ -15,7 +15,7 @@ if ((cluster.isMaster) && (process.execArgv.indexOf('--debug') < 0) && (process.
 
     // Create a worker for each CPU
     for (var i = 0; i < cpuCount; i += 1) {
-        console.log ('forking ',i);
+        console.log('forking ', i);
         cluster.fork();
     }
 
@@ -31,12 +31,11 @@ if ((cluster.isMaster) && (process.execArgv.indexOf('--debug') < 0) && (process.
 } else {
 
     var workerId = 0;
-    if (!cluster.isMaster)
-    {
+    if (!cluster.isMaster) {
         workerId = cluster.worker.id;
     }
 // Creates and serves mean application
-    mean.serve({ workerid: workerId /* more options placeholder*/ }, function (app, config) {
+    mean.serve({workerid: workerId /* more options placeholder*/}, function (app, config) {
         var port = config.https && config.https.port ? config.https.port : config.http.port;
         console.log('Mean app started on port ' + port + ' (' + process.env.NODE_ENV + ') cluster.worker.id:', workerId);
     });

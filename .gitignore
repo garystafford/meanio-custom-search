@@ -63,3 +63,5 @@ test/coverage/
 modules/public/
 modules/views/
 /public/build/
+
+cse_config.json
