@@ -7,15 +7,19 @@ angular.module('mean.search').controller('SearchController', ['$scope', 'Global'
         $scope.package = {
             name: 'search'
         };
+        $scope.customSearchResults = {};
+        $scope.search_term = '';
 
-        $scope.customSearchResults = {'test' : '123'};
-
-        Search.getSearchResults()
-            .then(function (response) {
-                $scope.customSearchResults = response.data.items;
-                console.log($scope.customSearchResults);
-            }, function (error) {
-                console.error(error);
-            });
+        $scope.submit = function () {
+            if ($scope.search_term.trim()) { // if input is not blank...
+                Search.getSearchResults(this.search_term.trim())
+                    .then(function (response) {
+                        $scope.customSearchResults = response.data.items;
+                        $scope.search_term = ''; // clear form field
+                    }, function (error) {
+                        console.error(error);
+                    });
+            }
+        };
     }
 ]);

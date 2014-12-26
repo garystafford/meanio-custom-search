@@ -1,26 +1,29 @@
 <div class="" data-ng-controller="SearchController">
     <h2>Google Custom Search API Example</h2>
+    <br/>
+
+    <form class="form-inline" ng-submit="submit()">
+        Search term:
+        <br/>
+
+        <div class="form-group">
+            <input type="text" class="form-control" ng-model="search_term" name="search_term"
+                   placeholder="e.g. MEAN Stack"/>
+            <button type="submit" class="btn btn-small btn-primary" id="submit">Search</button>
+        </div>
+    </form>
+    <hr/>
 
     <div>
-        <p>AngularJS Factory Service returns thr top 'mean stack' search results from
-            Google's Custom Search API.</p>
+        <p>Top 10 results: </p>
         <ol>
             <li ng-repeat="results in customSearchResults">
                 <a href="{{results.link}}"
                    target="_blank"><strong>{{results.displayLink}}</strong></a>
                 <br/>
                 {{results.title}}
-                <hr/>
+                <br/><br/>
             </li>
         </ol>
-        <hr/>
     </div>
-
-    </br>
-    <p class="alert alert-info">You can find your package in /packages/search</p>
-    </br>
-    <p class="alert alert-warning">MEAN versions prior to 0.3.2 will be in /node_modules/search</p>
-    </br>
-    <h3><a href="http://www.mean.io/#!/docs">Documentation</a></h3>
-    </br>
 </div>

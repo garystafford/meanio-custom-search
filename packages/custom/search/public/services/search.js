@@ -2,7 +2,8 @@
 
 angular.module('mean.search').factory('Search', ['$q', '$http',
     function ($q, $http) {
-        var _getConfig = function () {
+        var _search_term = '',
+            _getConfig = function () {
                 var deferred = $q.defer(),
                     httpPromise = $http.get('search/assets/cse_config.json');
 
@@ -20,7 +21,7 @@ angular.module('mean.search').factory('Search', ['$q', '$http',
                     host = 'https://www.googleapis.com/customsearch/v1',
                     args = {
                         'cse_id'     : _cse_config.cse_id,
-                        'search_term': 'mean+stack',
+                        'search_term': _search_term,
                         'num'        : '10',
                         'api_key'    : _cse_config.api_key,
                         'callback'   : 'JSON_CALLBACK'
@@ -40,10 +41,13 @@ angular.module('mean.search').factory('Search', ['$q', '$http',
 
         return {
             name            : 'search',
-            getSearchResults: function () {
+            getSearchResults: function (search_term) {
                 // promises are chained
                 // results of _getConfig are passed to _executeSearch
-                return _getConfig().then(_executeSearch);
+                if (search_term) {
+                    _search_term = search_term;
+                    return _getConfig().then(_executeSearch);
+                }
             }
         };
     }]);
