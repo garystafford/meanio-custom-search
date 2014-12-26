@@ -24,12 +24,12 @@ mean package search #creates package
 
 #### Links
 MEAN.io:
-http://mean.io
+http://mean.io  
 Google Developers Console - Projects (API Kkey):
 https://console.developers.google.com/project  
 Best practices for securely using API keys:
-https://developers.google.com/console/help/new/#usingkeys
+https://developers.google.com/console/help/new/#usingkeys  
 Google Custom Search Engine Setup (Search Engine ID): 
-https://www.google.com/cse/all
+https://www.google.com/cse/all  
 Google CustomSearch API v1: 
-http://developers.google.com/apis-explorer/#p/customsearch/v1
+http://developers.google.com/apis-explorer/#p/customsearch/v1  
