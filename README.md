@@ -23,13 +23,13 @@ mean package search #creates package
   * packages/custom/search/public/assets/cse_config.json
 
 #### Links
-MEAN.io:
+* MEAN.io:
 http://mean.io  
-Google Developers Console - Projects (API Kkey):
+* Google Developers Console - Projects (API Kkey):
 https://console.developers.google.com/project  
-Best practices for securely using API keys:
+* Best practices for securely using API keys:
 https://developers.google.com/console/help/new/#usingkeys  
-Google Custom Search Engine Setup (Search Engine ID): 
+* Google Custom Search Engine Setup (Search Engine ID):
 https://www.google.com/cse/all  
-Google CustomSearch API v1: 
+* Google CustomSearch API v1:
 http://developers.google.com/apis-explorer/#p/customsearch/v1  
