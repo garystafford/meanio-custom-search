@@ -1,37 +1,21 @@
 <div class="" data-ng-controller="SearchController">
-    <h1>Example view from your new awesome package</h1>
-
-    <h2>Package: {{package.name}}</h2>
+    <h2>Google Custom Search API Example</h2>
 
     <div>
-        <p>AngularJS Factory returns top 8 'mean stack' search results from
-            Google's Custom Search API to the controller.</p>
+        <p>AngularJS Factory Service returns thr top 'mean stack' search results from
+            Google's Custom Search API.</p>
         <ol>
             <li ng-repeat="results in customSearchResults">
                 <a href="{{results.link}}"
                    target="_blank"><strong>{{results.displayLink}}</strong></a>
                 <br/>
                 {{results.title}}
+                <hr/>
             </li>
         </ol>
         <hr/>
     </div>
 
-    <ol>
-        <li>
-            <a href="search/example/anyone">Server route that anyone can access</a>
-        </li>
-        <li>
-            <a href="search/example/auth">Server route that requires authentication</a>
-        </li>
-        <li>
-            <a href="search/example/admin">Server route that requires admin user</a>
-        </li>
-        <li>
-            <a href="search/example/render">Raw Html rendering example from using swig</a>
-        </li>
-    </ol>
-    <h3><img src="/search/assets/img/logo.png"/></h3>
     </br>
     <p class="alert alert-info">You can find your package in /packages/search</p>
     </br>

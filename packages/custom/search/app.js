@@ -18,7 +18,7 @@ Search.register(function(app, auth, database) {
 
   //We are adding a link to the main menu for all authenticated users
   Search.menus.add({
-    title: 'search example page',
+    title: 'Search Example',
     link: 'search example page',
     roles: ['authenticated'],
     menu: 'main'

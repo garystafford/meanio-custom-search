@@ -21,7 +21,7 @@ angular.module('mean.search').factory('Search', ['$q', '$http',
                     args = {
                         'cse_id'     : _cse_config.cse_id,
                         'search_term': 'mean+stack',
-                        'num'        : '8',
+                        'num'        : '10',
                         'api_key'    : _cse_config.api_key,
                         'callback'   : 'JSON_CALLBACK'
                     },
