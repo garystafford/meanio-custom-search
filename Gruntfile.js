@@ -46,7 +46,8 @@ module.exports = function (grunt) {
                 options: {
                     jshintrc: true
                 }
-            }
+            },
+
         },
         uglify    : {
             core: {

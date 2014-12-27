@@ -1,7 +1,12 @@
 'use strict';
 
-angular.module('mean.search').factory('Search', ['$resource',
-    function($resource) {
-        return $resource('/search/:search_term');
+angular.module('mean.search').service('Search', ['$http',
+    function ($http) {
+
+        var urlBase = '/search';
+
+        this.getCustomSearchResults = function (search_term) {
+            return $http.get(urlBase + '/' + search_term);
+        };
     }
 ]);

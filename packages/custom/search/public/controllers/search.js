@@ -12,14 +12,13 @@ angular.module('mean.search').controller('SearchController', ['$scope', '$stateP
 
         $scope.submit = function () {
             if ($scope.search_term.trim()) { // if input is not blank...
-                Search.get({
-                    search_term: $scope.search_term.trim()
-                }, function (results) {
-                    $scope.customSearchResults = results;
-                    console.log('Results: ' + $scope.customSearchResults);
-                }, function (error) {
-                    console.error(error);
-                });
+                Search.getCustomSearchResults($scope.search_term.trim())
+                    .success(function (results) {
+                        $scope.customSearchResults = results;
+                    })
+                    .error(function (error) {
+                        console.log(error.message);
+                    });
             }
         };
     }

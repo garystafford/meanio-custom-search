@@ -22,7 +22,7 @@ exports.getSearchResults = function (req, res, search_term) {
 
     request.get(host + params, function (error, response, body) {
         if (!error && response.statusCode === 200) {
-            res.end(response.body);
+            res.jsonp(body);
         }
     });
 };
