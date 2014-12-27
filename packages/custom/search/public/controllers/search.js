@@ -1,8 +1,8 @@
 'use strict';
 
 /* jshint -W098 */
-angular.module('mean.search').controller('SearchController', ['$scope', 'Global', 'Search',
-    function ($scope, Global, Search) {
+angular.module('mean.search').controller('SearchController', ['$scope', '$stateParams', 'Global', 'Search',
+    function ($scope, $stateParams, Global, Search) {
         $scope.global = Global;
         $scope.package = {
             name: 'search'
@@ -12,13 +12,14 @@ angular.module('mean.search').controller('SearchController', ['$scope', 'Global'
 
         $scope.submit = function () {
             if ($scope.search_term.trim()) { // if input is not blank...
-                Search.getSearchResults(this.search_term.trim())
-                    .then(function (response) {
-                        $scope.customSearchResults = response.data.items;
-                        $scope.search_term = ''; // clear form field
-                    }, function (error) {
-                        console.error(error);
-                    });
+                Search.get({
+                    search_term: $scope.search_term.trim()
+                }, function (results) {
+                    $scope.customSearchResults = results;
+                    console.log('Results: ' + $scope.customSearchResults);
+                }, function (error) {
+                    console.error(error);
+                });
             }
         };
     }
