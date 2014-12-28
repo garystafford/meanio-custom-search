@@ -2,8 +2,8 @@
 
 angular.module('mean.search').factory('Search', ['$http', '$q',
     function ($http, $q) {
-        var deferred = $q.defer(),
-            urlBase = '/search';
+        var deferred = $q.defer();
+        var urlBase = '/search';
 
         return {
             getCustomSearchResults: function (search_term) {
