@@ -4,7 +4,7 @@
  * List of Search Results
  */
 var request = require('request');
-require('request').debug = true;
+//require('request').debug = true;
 
 // This is used for testing so you don't have to call google (limited to 100 call/day)
 // change these 2 lines: host = 'http://localhost:80' and res.end(_test_data);
@@ -16,7 +16,7 @@ fs.readFile(__dirname + '/test_response.js', 'utf8', function (err, results) {
     if (err) {
         return console.log(err);
     }
-    console.log(results);
+    //console.log(results);
     _test_data = results;
 });
 
