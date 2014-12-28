@@ -1,12 +1,18 @@
 'use strict';
 
-angular.module('mean.search').service('Search', ['$http',
-    function ($http) {
+angular.module('mean.search').factory('Search', ['$http', '$q',
+    function ($http, $q) {
+        var deferred = $q.defer(),
+            urlBase = '/search';
 
-        var urlBase = '/search';
-
-        this.getCustomSearchResults = function (search_term) {
-            return $http.get(urlBase + '/' + search_term);
+        return {
+            getCustomSearchResults: function (search_term) {
+                $http.jsonp(urlBase + '/' + search_term)
+                    .then(function (response) {
+                        deferred.resolve(response.data.items);
+                    });
+                return deferred.promise;
+            }
         };
     }
 ]);
