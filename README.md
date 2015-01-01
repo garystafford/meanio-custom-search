@@ -54,3 +54,7 @@ https://developers.google.com/console/help/new/#usingkeys
 https://www.google.com/cse/all
 * Google CustomSearch API v1:  
 http://developers.google.com/apis-explorer/#p/customsearch/v1
+
+#### Preview
+<a href='https://github.com/garystafford/meanio-custom-search/blob/nodesearch/images/CustomSeachExample.png?raw=true'><img src='https://github.com/garystafford/meanio-custom-search/blob/nodesearch/images/CustomSeachExample_preview.png?raw=true'></a>
+[![Custom Search API](https://github.com/garystafford/meanio-custom-search/blob/nodesearch/images/CustomSeachExample_preview.png?raw=true)](https://github.com/garystafford/meanio-custom-search/blob/nodesearch/images/CustomSeachExample.png?raw=true)
