@@ -37,7 +37,7 @@ If you are using the `master` branch (AngularJS), add your own `search engine id
     "api_key": "<your_api_key>"
 }
 ```
-To start the MEAN.io application, run `grunt` or `node server`
+To start the MEAN.io application, run `grunt` or `node server`. Open your web browser to `http://localhost:3000/#!/search/example`.
 
 #### Changes to MEAN.io base framework
 * Files modified:
