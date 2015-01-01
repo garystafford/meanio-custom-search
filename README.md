@@ -3,6 +3,10 @@
 
 Google Custom Search API example, build on top of **MEAN.io** framework. This project requires you to create a Google API key and search engine ID. There are two examples of calling the API. See 'Branches' below.
 
+
+#### Preview
+[![Custom Search API](https://github.com/garystafford/meanio-custom-search/blob/nodesearch/previews/CustomSeachExample_preview.png?raw=true)](https://github.com/garystafford/meanio-custom-search/blob/nodesearch/previews/CustomSeachExample.png?raw=true)
+
 #### Branches
 ##### master
 Custom Search API is called from the client-side by an AngularJS factory. You will need to create a `cse_config.json` file to hold your own `search engine id` and `API key` values. See notes below. Note, this method exposes your private API key. It is only intented for demostration purposes.
@@ -54,6 +58,3 @@ https://developers.google.com/console/help/new/#usingkeys
 https://www.google.com/cse/all
 * Google CustomSearch API v1:  
 http://developers.google.com/apis-explorer/#p/customsearch/v1
-
-#### Preview
-[![Custom Search API](https://github.com/garystafford/meanio-custom-search/blob/nodesearch/previews/CustomSeachExample_preview.png?raw=true)](https://github.com/garystafford/meanio-custom-search/blob/nodesearch/previews/CustomSeachExample.png?raw=true)
