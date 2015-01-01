@@ -9,7 +9,7 @@ Google Custom Search API example, build on top of **MEAN.io** framework. This pr
 
 #### Branches
 ##### master
-Custom Search API is called from the client-side by an AngularJS factory. You will need to create a `cse_config.json` file to hold your own `search engine id` and `API key` values. See notes below. Note, this method exposes your private API key. It is only intented for demostration purposes.
+Custom Search API is called from the client-side by an AngularJS factory. You will need to create a `cse_config.json` file to hold your own `search engine id` and `API key` values. See notes below. Note, this method exposes your private API key. It is only only intended for demonstration purposes.
 
 ##### nodesearch (ACTIVE)
 Custom Search API is called from the backend by Node.js. Node.js then exposes a restful end-point (i.e. `http://localhost:3000/search/foo`), which is called from the client-side by an AngularJS factory.  
@@ -24,8 +24,8 @@ cd meanio-custom-search
 npm install
 mean package search  
 ```
-If your using the `nodesearch` branch (Node.js), create two environmental varibles, `GOOGLE_CSE_ID` and `GOOGLE_API_KEY`, to hold your own `search engine id` and `API key` values.  
-If your using the `master` branch (AngularJS), add your own `search engine id` and `API key` values to the `packages/custom/search/public/assets/cse_config.json` file. This file is not included in repository, since these values should be kept private.
+If you are using the `nodesearch` branch (Node.js), create two environmental variables, `GOOGLE_CSE_ID` and `GOOGLE_API_KEY`, to hold your own `search engine id` and `API key` values.
+If you are using the `master` branch (AngularJS), add your own `search engine id` and `API key` values to the `packages/custom/search/public/assets/cse_config.json` file. This file is not included in repository, since these values should be kept private.
 ```
 {
     "cse_id" : "<your_search_engine_id>",
