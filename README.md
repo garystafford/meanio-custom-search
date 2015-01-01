@@ -1,23 +1,20 @@
 ## Google Custom Search API Example  
 ###  Using MEAN.io Framework
 
-Google Custom Search API example, build on top of **MEAN.io** framework. Example of calling a third-party Web API
-from a MEAN stack application. Call a Web API from the client-side (AngularJS), and also from the backend (Node.js).
-This project requires you to create a Google API key and Google search engine ID.
+Google Custom Search API example, build on top of **MEAN.io** framework. Example of calling a third-party Web API from a MEAN stack application. Call a Web API from the client-side (AngularJS), and also from the backend (Node.js). This project requires you to create a Google API key and Google search engine ID.
 
 #### Preview
 [![Custom Search API](https://github.com/garystafford/meanio-custom-search/blob/nodesearch/previews/CustomSeachExample_preview.png?raw=true)](https://github.com/garystafford/meanio-custom-search/blob/nodesearch/previews/CustomSeachExample.png?raw=true)
 
 #### Branches
 ##### master
-Custom Search API is called from the client-side by an AngularJS factory. You will need to create a `cse_config.json` file to hold your own `search engine id` and `API key` values. See notes below. Note, this method exposes your private API key. It is only only intended for demonstration purposes.
+Google Custom Search API is called from the client-side by an AngularJS factory. You will need to create a `cse_config.json` file to hold your own `search engine id` and `API key` values. See notes below. Note, this method exposes your private API key. It is only only intended for demonstration purposes.
 
 ##### nodesearch (ACTIVE)
-Custom Search API is called from the backend by Node.js. Node.js then exposes a restful end-point (i.e. `http://localhost:3000/search/foo`), which is called from the client-side by an AngularJS factory.  
-You will need to create two environment variables to hold your own `search engine id` and `API key` values. See notes below. This method protects your private `API key` from exposure on the client-side. 
+Google Custom Search API is called from the backend by Node.js. Node.js then exposes a restful end-point (i.e. `http://localhost:3000/search/foo`), which is called from the client-side by an AngularJS factory. You will need to create two environment variables to hold your own `search engine id` and `API key` values. See notes below. This method protects your private `API key` from exposure on the client-side.
 
 #### Commands
-To use this GitHub project:
+To use this GitHub project, these are the commands:
 ```
 git clone https://github.com/garystafford/meanio-custom-search.git
 cd meanio-custom-search
@@ -40,6 +37,7 @@ If you are using the `master` branch (AngularJS), add your own `search engine id
     "api_key": "<your_api_key>"
 }
 ```
+To start the MEAN.io application, run `grunt` or `node server`
 
 #### Changes to MEAN.io base framework
 * Files modified:
