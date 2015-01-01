@@ -16,7 +16,7 @@ angular.callbacks._0({
                     "inputEncoding": "utf8",
                     "outputEncoding": "utf8",
                     "safe": "off",
-                    "cx": "003613325425179417861:idrraejg7hu"
+                    "cx": "<GOOGLE_CSE_ID>"
                 }
             ],
             "request": [
@@ -29,12 +29,12 @@ angular.callbacks._0({
                     "inputEncoding": "utf8",
                     "outputEncoding": "utf8",
                     "safe": "off",
-                    "cx": "003613325425179417861:idrraejg7hu"
+                    "cx": "<GOOGLE_CSE_ID>"
                 }
             ]
         },
         "context": {
-            "title": "programmaticponderings"
+            "title": "samplesearchengine"
         },
         "searchInformation": {
             "searchTime": 0.353155,
