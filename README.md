@@ -4,7 +4,7 @@
 Google Custom Search API example, build on top of **MEAN.io** framework. Example of calling a third-party Web API from a MEAN stack application. Call a Web API from the client-side (AngularJS), and also from the backend (Node.js). This project requires you to create a Google API key and Google search engine ID.
 
 #### Preview
-[![Custom Search API](https://github.com/garystafford/meanio-custom-search/blob/nodesearch/previews/CustomSeachExample_preview.png?raw=true)](https://github.com/garystafford/meanio-custom-search/blob/nodesearch/previews/CustomSeachExample.png?raw=true)
+[![Custom Search API](https://github.com/garystafford/meanio-custom-search/blob/nodesearch/previews/CustomSearchExample_preview.png?raw=true)](https://github.com/garystafford/meanio-custom-search/blob/nodesearch/previews/CustomSearchExample.png?raw=true)
 
 #### Branches
 ##### master

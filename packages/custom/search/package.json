@@ -1,9 +1,9 @@
 {
   "name": "search",
-  "version": "0.0.1",
-  "description": "Some description of search",
+  "version": "0.1.0",
+  "description": "Google Custom Search API example",
   "author": {
-    "name": "mean scaffold"
+    "name": "Gary A. Stafford"
   },
   "mean": "0.4.2",
   "engines": {
