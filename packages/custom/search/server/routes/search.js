@@ -9,6 +9,7 @@ module.exports = function (Search, app, auth, database) {
 
     app.route('/search/:search_term')
         .get(search.getSearchResults);
+        //.get(sample.getSampleSearchResults);
 
     app.param('search_term', search.getSearchResults);
 

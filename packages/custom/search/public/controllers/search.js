@@ -10,16 +10,18 @@ angular.module('mean.search').controller('SearchController', ['$scope', 'Global'
         $scope.customSearchResults = {};
         $scope.search_term = '';
 
-        $scope.submit = function () {
+        function loadData() {
             $scope.search_term = $scope.search_term.trim();
             if ($scope.search_term) { // if input is not blank...
-                var promise = Search.getCustomSearchResults($scope.search_term);
-                promise.then(function (results) {
-                    $scope.customSearchResults = results;
-                }, function (error) {
-                    console.log(error.message);
-                });
+                Search.getCustomSearchResults($scope.search_term)
+                    .then(function (results) {
+                        $scope.customSearchResults = results.data.items;
+                    });
             }
+        }
+
+        $scope.submit = function () {
+            loadData();
         };
     }
 ]);
