@@ -16,7 +16,7 @@ angular.callbacks._0({
                     "inputEncoding": "utf8",
                     "outputEncoding": "utf8",
                     "safe": "off",
-                    "cx": "<GOOGLE_CSE_ID>"
+                    "cx": "ed026i714398r53510g2ja1ru6741h:73"
                 }
             ],
             "request": [
@@ -29,7 +29,7 @@ angular.callbacks._0({
                     "inputEncoding": "utf8",
                     "outputEncoding": "utf8",
                     "safe": "off",
-                    "cx": "<GOOGLE_CSE_ID>"
+                    "cx": "ed026i714398r53510g2ja1ru6741h:73"
                 }
             ]
         },

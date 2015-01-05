@@ -7,7 +7,7 @@ var fs = require('fs');
 
 function getSampleData(callback) {
     function readData() {
-        fs.readFile(__dirname + '/sample_data.json', 'utf8', function (err, data) {
+        fs.readFile('packages/custom/search/server/data/sample_data.json', 'utf8', function (err, data) {
             if (err) {
                 return callback(err);
             }
@@ -15,6 +15,7 @@ function getSampleData(callback) {
             callback(results);
         });
     }
+
     readData();
 }
 
@@ -23,7 +24,7 @@ exports.getSampleSearchResults = function (req, res) {
         res.type('application/javascript');
         res.jsonp({
             'statusCode': 200,
-            'items': data
+            'items'     : data
         });
     }, function (err) {
         console.error(err);

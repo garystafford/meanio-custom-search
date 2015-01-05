@@ -1,19 +1,19 @@
 'use strict';
 
 var request = require('request');
-//require('request').debug = true;
+require('request').debug = true;
 
 exports.getSearchResults = function (req, res) {
     function constructUrl() {
         var host = 'https://www.googleapis.com/customsearch/v1',
             args = {
-                'cse_id'     : process.env.GOOGLE_CSE_ID,
-                'search_term': req.params.search_term,
-                'num'        : '10',
-                'api_key'    : process.env.GOOGLE_API_KEY
+                'cx' : process.env.GOOGLE_CSE_ID,
+                'key': process.env.GOOGLE_API_KEY,
+                'q'  : req.params.search_term,
+                'num': req.params.result_count
             },
-            params = ('?cx=' + args.cse_id + '&q=' + args.search_term +
-            '&num=' + args.num + '&key=' + args.api_key);
+            params = ('?cx=' + args.cx + '&q=' + args.q + '&num=' + args.num + '&key=' + args.key);
+
         return host + params;
     }
 

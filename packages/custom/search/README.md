@@ -50,17 +50,17 @@ To start the MEAN.io application, run `grunt` or `node server`. Open your web br
   * packages/custom/search/server/controllers/search.js
   * packages/custom/search/server/controllers/sample_search.js
   * packages/custom/search/server/controllers/sample_data.js
-* Files you need to add (for AngularJS exmaple):
+* Files you need to add (for AngularJS example):
   * packages/custom/search/public/assets/cse_config.json
 
 #### Links
 * MEAN.io:  
 http://mean.io  
-* Google Developers Console - Projects (API Kkey):  
+* Google Developers Console - Projects (API Key):
 https://console.developers.google.com/project
 * Best practices for securely using API keys:  
 https://developers.google.com/console/help/new/#usingkeys
-* Google Custom Search Engine Setup (search Eegine ID):  
+* Google Custom Search Engine Setup (search Engine ID):
 https://www.google.com/cse/all
 * Google CustomSearch API v1:  
 http://developers.google.com/apis-explorer/#p/customsearch/v1

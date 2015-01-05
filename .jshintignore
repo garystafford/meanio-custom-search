@@ -1,2 +1,2 @@
 test/coverage/**
-packages/custom/search/server/controllers/sample_data.js
+packages/custom/search/server/data/sample_data.js

@@ -5,14 +5,17 @@ var sample = require('../controllers/sample_search');
 
 /* jshint -W098 */
 // The Package is past automatically as first parameter
-module.exports = function (Search, app, auth, database) {
+module.exports = function (Search, app) {
 
-    app.route('/search/:search_term')
+    app.route('/customsearch/:search_term/:result_count')
         .get(search.getSearchResults);
-        //.get(sample.getSampleSearchResults);
+
+    app.route('/customsearch/:search_term')
+        .get(search.getSearchResults);
 
     app.param('search_term', search.getSearchResults);
+    app.param('result_count', search.getSearchResults);
 
-    app.route('/sample') // sample data
+    app.route('/sample') // sample foo data
         .get(sample.getSampleSearchResults);
 };
