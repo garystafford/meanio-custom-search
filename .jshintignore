@@ -1,2 +1,3 @@
 test/coverage/**
 packages/custom/search/server/data/sample_data.js
+packages/custom/search/server/data/Sample Response to AngularJS.js

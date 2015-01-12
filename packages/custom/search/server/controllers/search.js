@@ -1,7 +1,7 @@
 'use strict';
 
 var request = require('request');
-require('request').debug = true;
+//require('request').debug = true;
 
 exports.getSearchResults = function (req, res) {
     function constructUrl() {

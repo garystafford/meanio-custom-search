@@ -7,13 +7,14 @@ var fs = require('fs');
 
 function getSampleData(callback) {
     function readData() {
-        fs.readFile('packages/custom/search/server/data/sample_data.json', 'utf8', function (err, data) {
-            if (err) {
-                return callback(err);
-            }
-            var results = JSON.parse(data).items;
-            callback(results);
-        });
+        fs.readFile('packages/custom/search/server/data/sampleResponseNode.json',
+            'utf8', function (err, data) {
+                if (err) {
+                    return callback(err);
+                }
+                var results = JSON.parse(data).items;
+                callback(results);
+            });
     }
 
     readData();
